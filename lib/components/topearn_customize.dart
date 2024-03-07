@@ -1,12 +1,11 @@
 import "package:flutter/material.dart";
-import "package:flutter/src/widgets/icon_data.dart";
 
 class TopearnCustomize extends StatelessWidget {
   final String optionText;
   final IconData optionIcon;
   final Color containerColor, fontColor, iconColor;
   final Function()? onTap;
-  TopearnCustomize({
+  const TopearnCustomize({
     super.key,
     required this.onTap,
     required this.optionText,
@@ -41,7 +40,7 @@ class TopearnCustomize extends StatelessWidget {
                 ],
               ),
               Padding(
-                padding: EdgeInsets.all(8.0),
+                padding: const EdgeInsets.all(8.0),
                 child: Row(
                   children: [
                     Text(

@@ -25,12 +25,12 @@ class _MyAppState extends State<MyApp> {
     });
   }
 
-  final List<Widget> _Pages = [
-    HomePage(),
-    WalletPage(),
-    ExplorePage(),
-    InvestPage(),
-    ProfilePage(),
+  final List<Widget> _pages = [
+    const HomePage(),
+    const WalletPage(),
+    const ExplorePage(),
+    const InvestPage(),
+    const ProfilePage(),
   ];
 
   @override
@@ -38,7 +38,7 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         home: Scaffold(
-          body: _Pages[_selectedIndex],
+          body: _pages[_selectedIndex],
           bottomNavigationBar: BottomNavigationBar(
             backgroundColor: Colors.white,
             unselectedItemColor: Colors.grey.shade400,
@@ -46,7 +46,7 @@ class _MyAppState extends State<MyApp> {
             currentIndex: _selectedIndex,
             onTap: _navigateBottomBar,
             type: BottomNavigationBarType.fixed,
-            items: [
+            items: const [
               BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
               BottomNavigationBarItem(
                   icon: Icon(Icons.wallet), label: 'Wallet'),

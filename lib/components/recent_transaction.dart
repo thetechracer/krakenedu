@@ -73,7 +73,7 @@ class RecentTransact extends StatelessWidget {
                   ),
                   Text(
                     recenttransAmount,
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontSize: 23,
                       fontWeight: FontWeight.bold,
                     ),
