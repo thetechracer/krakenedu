@@ -122,7 +122,7 @@ class InvestPage extends StatelessWidget {
                     ),
                     TopearnCustomize(
                       optionText: "Earnings",
-                      optionIcon: Icons.show_chart,
+                      optionIcon: Icons.insert_chart,
                       iconColor: Colors.purple.shade200,
                       containerColor: Colors.grey.shade100,
                       fontColor: Colors.black,
